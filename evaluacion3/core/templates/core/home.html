@@ -1,12 +1,80 @@
-<!DOCTYPE html>
+
+ {% load static %}
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>hola</h1>
-</body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'core/css/Estilo.css' %}">
+    <title>inicio</title>
+  </head>
+  <body>
+     <!-- Barra inicio -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="barra" >
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{% url 'home' %}">Inicio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'forma' %}">Registro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'añadir' %}">Añadir libro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'visualizar1'%}">Visualizar libros</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    
+    {% load static %}
+    
+    
+    <div id=""  img src="{% static 'core/img/libros-motivación-800x500.jpg' %}" >
+    <h1>La página es una aplicación con todos los libros de la biblioteca, estos son los ultimos libro que tenemos de Becca Fitzpatrick, una escritora conocida estado unidense que escribió la saga de Hush Hush.</h1> 
+   </div>
+
+
+   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img id="Imagen1" src="https://cdn.ticbeat.com/src/uploads/2013/09/library.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+           <img id="imagen2" src="https://www.diainternacionalde.com/imagenes/dias/abril/04-23_dia-mundial-del-libro_otono_m.jpg" class="d-block w-100" alt="...">
+          </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+           </button>
+           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+             <span class="visually-hidden">Next</span>
+            </button>
+         </div>
+        </div>
+      </div>
+    </div>
+  
+   
+   
+   
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+  
+    
+  </body>
 </html>
