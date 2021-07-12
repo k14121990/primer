@@ -1,0 +1,21 @@
+#hola1{
+    margin-top: 400px;
+}
+
+#hola{
+    margin-top: 400px;
+    }
+
+
+
+
+#carouselExampleControls{
+    width: 500px;
+}
+
+  /* cambio el fondo del color de barra*/
+  #barra {
+    background-color: #0d365f !important;
+    color:#f5edf4;
+
+}
